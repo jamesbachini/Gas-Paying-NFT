@@ -1,0 +1,10 @@
+{
+  "name": "Gas-Paying-NFT",
+  "dependencies": {
+    "hardhat": "^2.17.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@openzeppelin/contracts": "^4.8.3",
+    "dotenv": "^16.0.3"
+    }
+    
+}
