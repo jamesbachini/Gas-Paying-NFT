@@ -46,7 +46,7 @@ contract GotGas is ERC721 {
     function distribute() public {
         uint fundsAvailable = stETH.balanceOf(address(this)) - deposits;
         stETH.approve(address(curve), fundsAvailable);
-        uint256 min = fundsAvailable * 995 / 1000;
+        uint min = fundsAvailable * 995 / 1000;
         curve.exchange(1,0,fundsAvailable,min);
         uint fundsPerUser = address(this).balance / id;
         for (uint i = 1; i <= id; i++) {
